@@ -5,7 +5,7 @@
         "dminustin",
         "tags-package"
     ],
-    "homepage": "https://github.com/dminustin/lsne-core-package",
+    "homepage": "https://github.com/dminustin/lsne-core",
     "license": "MIT",
     "type": "library",
     "authors": [
