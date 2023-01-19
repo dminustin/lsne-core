@@ -21,7 +21,8 @@ trait HasUUIDTrait
         parent::boot();
         static::creating(function ($model) {
             if (empty($model->{$model->getKeyName()})) {
-                $model->{$model->getKeyName()} = Str::orderedUuid()->toString();
+                $model->id = Str::orderedUuid()->toString();
+//                $model->{$model->getKeyName()} = Str::orderedUuid()->toString();
             }
         });
     }
