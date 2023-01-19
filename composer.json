@@ -43,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dminustin\\LSNE\\Core\\PackageServiceProvider"
+                "Dminustin\\LSNE\\CorePackage\\PackageServiceProvider"
             ],
             "aliases": {
                 "CorePackage": "Dminustin\\LSNE\\PackageFacade"
