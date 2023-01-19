@@ -1,11 +1,12 @@
 {
-    "name": "dminustin/lsne-core-package",
+    "name": "dminustin/lsne-core",
     "description": "Core package",
     "keywords": [
         "dminustin",
         "tags-package"
     ],
-    "homepage": "https://github.com/dminustin/lsne-core-package",
+    "minimum-stability": "dev",
+    "homepage": "https://github.com/dminustin/lsne-core",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,16 +17,14 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "php": "^7.4|^8.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
         "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Dminustin\\LSNE\\Core\\": "src"
+            "Dminustin\\LSNE\\CorePackage\\": "src"
         }
     },
     "autoload-dev": {
@@ -44,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dminustin\\LSNE\\Core\\PackageServiceProvider"
+                "Dminustin\\LSNE\\CorePackage\\PackageServiceProvider"
             ],
             "aliases": {
                 "CorePackage": "Dminustin\\LSNE\\PackageFacade"
