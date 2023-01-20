@@ -46,7 +46,7 @@
                 "Dminustin\\LSNE\\CorePackage\\PackageServiceProvider"
             ],
             "aliases": {
-                "CorePackage": "Dminustin\\LSNE\\PackageFacade"
+                "LSNECorePackage": "Dminustin\\LSNE\\CorePackage\\PackageFacade"
             }
         }
     }
