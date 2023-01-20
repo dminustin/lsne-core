@@ -21,7 +21,7 @@ class PackageServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('lsne-core.php'),
+                __DIR__ . '/../config/lsne-core.php' => config_path('lsne-core.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class PackageServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'lsne-core.php');
+        $this->mergeConfigFrom(__DIR__ . '/../config/lsne-core.php', 'lsne-core.php');
 
         // Register the main class to use with the facade
         $this->app->singleton('lsne-tags', function () {
